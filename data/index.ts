@@ -14,7 +14,7 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "Established in late 2023, Leaflet Digital Solutions has quickly grown into a trusted partner for businesses worldwide.",
+      "Leaflet Digital Solutions has quickly grown into a trusted partner for businesses worldwide.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -25,7 +25,7 @@ export const gridItems = [
   {
     id: 2,
     title:
-      "We empower businesses and agencies globally by offering 24/7 software development support,",
+      "We empower businesses globally by offering 24/7 software development support,",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -92,7 +92,7 @@ export const projects = [
     title: "Yoom - Video Conferencing App",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/wordpress.svg"],
     link: "https://github.com/adrianhajdin/zoom-clone",
   },
   {
@@ -137,12 +137,6 @@ export const testimonials = [
       "Leaflet has been constantly proving itself as client satisfaction and performance oriented from day one. Whole E-com website Dev. The experience was magnificent. ",
     name: "Giriraj Adhikari",
     title: "Founder of DajuVai",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
   },
 ];
 

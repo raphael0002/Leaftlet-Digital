@@ -7,10 +7,10 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-orange-500">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -18,11 +18,8 @@ const RecentProjects = () => {
             className="xl:min-h-[38rem] lg:min-h-[28rem] md:min-h-[25rem] h-[32rem] flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] xl:w-[32rem]"
             key={item.id}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
-              <div className="relative flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] overflow-hidden h-[30vh] md:h-[30vh] lg:h-[28vh] xl:h-[38vh] xl:w-[32rem] mb-10">
+            <PinContainer title={item.title} href={item.link}>
+              <div className="relative flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] overflow-hidden h-[30vh] md:h-[30vh] lg:h-[28vh] xl:h-[36vh] xl:w-[32rem] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -60,16 +57,16 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon5" className="p-1" />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-orange-500">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-3" color="rgb(249 115 22)" />
                 </div>
               </div>
             </PinContainer>

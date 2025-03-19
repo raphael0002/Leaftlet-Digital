@@ -12,6 +12,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import dynamic from "next/dynamic";
 import Lottie, { LottieProps } from "react-lottie";
+import { leftLists, rightLists } from "@/data";
 
 // Create a wrapper for Lottie that handles the lifecycle properly
 const LottieWrapper = dynamic(
@@ -87,9 +88,6 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
   const [copied, setCopied] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [showLottie, setShowLottie] = useState(false);
@@ -179,7 +177,7 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-2xl max-w-[28rem] font-bold z-10`}
           >
             {title}
           </div>
