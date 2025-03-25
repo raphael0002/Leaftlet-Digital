@@ -13,8 +13,7 @@ export const rightLists = ["Automation", "Marketing", "Branding"];
 export const gridItems = [
   {
     id: 1,
-    title:
-      "Leaflet Digital Solutions has quickly grown into a trusted partner for businesses worldwide.",
+    title: "Leaflet Digital Solutions – A trusted global tech partner.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -24,8 +23,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title:
-      "We empower businesses globally by offering 24/7 software development support,",
+    title: "24/7 software development support for businesses worldwide.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -35,7 +33,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Delivered over 25+ successful software projects ",
+    title: "Successfully delivered 25+ software projects.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -45,8 +43,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title:
-      "we specialize in providing cutting-edge digital solutions that drive growth and efficiency.",
+    title: "Driving growth with cutting-edge digital solutions.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -57,8 +54,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title:
-      "Our expertise lies in crafting custom solutions that streamline operations, enhance user experiences, and boost digital presence.",
+    title: "Ready to start your project with us?",
     description: "",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -81,35 +77,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "E-commerce - Dajuvai",
+    des: "Daju vai is a multi vender e-commerce brand based in nepal. It is an online platform where you can buy and sell products.",
+    img: "/projects/dajuvai.png",
+    iconLists: ["/wordpress.svg"],
+    link: "https://dajuvai.com/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Movers - A2bmovers",
+    des: "A2bmovers is a movers company based on netherlands. They are a one-stop solution for all your moving needs.",
+    img: "/projects/a2b.png",
     iconLists: ["/wordpress.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://a2bmovers.nl/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "Cleaning Service - Carpet2Clean",
+    des: "Carpet2clean is a cleaning company based on sydney australia. They are a one-stop solution for all your cleaning needs.",
+    img: "/projects/carpet2clean.png",
+    iconLists: ["/wordpress.svg"],
+    link: "https://carpet2clean.com.au/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "E-commerce - TNOB",
+    des: "Tnob is a e-commerce website based on denmark for selling phone cases of barcelona. It is an online platform where you can buy and sell cases of barcelona.",
+    img: "/projects/tnob.png",
+    iconLists: ["/wordpress.svg"],
+    link: "https://tnob.shop/",
   },
 ];
 

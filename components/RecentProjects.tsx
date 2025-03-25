@@ -15,11 +15,11 @@ const RecentProjects = () => {
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
-            className="xl:min-h-[38rem] lg:min-h-[28rem] md:min-h-[25rem] h-[32rem] flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] xl:w-[32rem]"
+            className="xl:min-h-[38rem] lg:min-h-[32rem] md:min-h-[25rem] h-[35rem] flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] xl:w-[32rem]"
             key={item.id}
           >
             <PinContainer title={item.title} href={item.link}>
-              <div className="relative flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] overflow-hidden h-[30vh] md:h-[30vh] lg:h-[28vh] xl:h-[36vh] xl:w-[32rem] mb-10">
+              <div className="relative flex items-center justify-center md:w-[25rem] lg:w-[25rem] w-[80vw] overflow-hidden h-[35vh] md:h-[30vh] lg:h-[32vh] xl:h-[36vh] xl:w-[32rem] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -38,7 +38,7 @@ const RecentProjects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-3"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -47,8 +47,8 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
+              <div className="flex items-center justify-end mt-7 mb-3">
+                {/* <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
@@ -60,7 +60,7 @@ const RecentProjects = () => {
                       <img src={icon} alt="icon5" className="p-1" />
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-orange-500">
