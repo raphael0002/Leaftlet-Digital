@@ -31,7 +31,7 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50 cursor-pointer",
+        "relative group/pin z-50 cursor-pointer ",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -42,7 +42,7 @@ export const PinContainer = ({
           perspective: "1000px",
           transform: "rotateX(70deg) translateZ(0deg)",
         }}
-        className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
+        className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2 "
       >
         <div
           style={{
@@ -66,7 +66,7 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+    <motion.div className="w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500 ">
       <div className="w-full h-full -mt-7 flex-none inset-0">
         <div className="absolute top-0 inset-x-0 flex justify-center">
           <a
@@ -76,7 +76,7 @@ export const PinPerspective = ({
           >
             {/* Fixed width for the title */}
             <span className="relative z-20 text-white  text-xs font-bold inline-block py-0.5 max-w-[200px] text-center truncate">
-              {title}
+              {href}
             </span>
 
             {/* <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span> */}
