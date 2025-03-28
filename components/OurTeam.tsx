@@ -29,7 +29,10 @@ export default function ModernTeamSection() {
   }, []);
 
   return (
-    <section className="relative bg-transparent overflow-hidden w-full scroll-smooth py-20">
+    <section
+      className="relative bg-transparent overflow-hidden w-full scroll-smooth py-20"
+      id="team"
+    >
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -59,13 +62,13 @@ export default function ModernTeamSection() {
             whileHover={{ scale: 1.05 }}
             onClick={() => setActiveCard(activeCard === index ? null : index)}
             className={`
-              flex-shrink-0 w-96 md:w-80 lg:w-96 xl:w-96 cursor-pointer transform transition-all duration-300 
+              flex-shrink-0 w-[21rem] md:w-80 lg:w-96 xl:w-96 cursor-pointer transform transition-all duration-300 
               ${
                 activeCard === index
                   ? "scale-110 shadow-2xl"
                   : "hover:scale-105"
               }
-              bg-white/70 dark:bg-gray-800/70 
+              bg-white/70 dark:bg-gray-800/20 
               backdrop-blur-lg rounded-xl overflow-hidden border border-white/20 
               dark:border-gray-700/20 shadow-lg hover:shadow-2xl p-6
             `}
@@ -87,7 +90,7 @@ export default function ModernTeamSection() {
               <p className="text-gray-500 dark:text-gray-400 text-base mb-4">
                 {member.company}
               </p>
-              <div className="bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm p-5 rounded-2xl">
+              <div className="bg-gray-100/50 dark:bg-gray-700/20 backdrop-blur-sm p-5 rounded-2xl">
                 <p className="text-gray-700 dark:text-gray-200 italic text-base">
                   &ldquo;{member.testimonial}&rdquo;
                 </p>
