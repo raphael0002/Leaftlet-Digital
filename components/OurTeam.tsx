@@ -89,7 +89,7 @@ export default function ModernTeamSection() {
               </p>
               <div className="bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm p-5 rounded-2xl">
                 <p className="text-gray-700 dark:text-gray-200 italic text-base">
-                  "{member.testimonial}"
+                  &ldquo;{member.testimonial}&rdquo;
                 </p>
               </div>
             </div>

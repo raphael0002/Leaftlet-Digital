@@ -114,7 +114,7 @@ export default function ContactForm() {
               transition={{ duration: 0.4, delay: 0.3 }}
               className="text-gray-600 dark:text-gray-400 text-lg"
             >
-              Get in touch and we'll respond within 24 hours.
+              Get in touch and we&apos;ll respond within 24 hours.
             </motion.p>
           </div>
 

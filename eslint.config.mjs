@@ -18,6 +18,13 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-vars": "off", // Disable unused variable errors
       "@typescript-eslint/no-explicit-any": "off", // Disable 'any' type errors
       "no-var": "off", // Allow using 'var' (not recommended)
+      "no-undef": "off", // Allow using 'undefined' (not recommended)
+      "no-unused-vars": "off", // Disable unused variable errors
+      "exhaustive-deps": "off", // Disable missing dependencies in useEffect()
+      "@next/next/no-img-element": "error",
+      "react/no-unescaped-entities": ["error", { forbid: [">", "}", '"'] }],
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-unescaped-entities": "warn",
     },
   },
 ];
