@@ -1,10 +1,6 @@
 import nodemailer from "nodemailer";
 
-export async function POST(request: {
-  json: () =>
-    | PromiseLike<{ name: any; email: any; phone: any; message: any }>
-    | { name: any; email: any; phone: any; message: any };
-}) {
+export async function POST(request: Request) {
   try {
     const { name, email, phone, message } = await request.json();
 
