@@ -1,17 +1,17 @@
 import React from "react";
 
-import { workExperience } from "@/data";
+import { workServices } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
-const Experience = () => {
+const Services = () => {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full" id="services">
       <h1 className="heading">
-        Our <span className="text-orange-500">work experience</span>
+        Our <span className="text-orange-500"> Services</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
+        {workServices.map((card) => (
           <Button
             key={card.id}
             //   random duration will be fun , I think , may be not
@@ -51,4 +51,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Services;

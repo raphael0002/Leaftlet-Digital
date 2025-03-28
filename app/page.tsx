@@ -11,6 +11,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import OurTeam from "@/components/OurTeam";
+import ContactForm from "@/components/ContactForm";
 
 const Home = () => {
   return (
@@ -19,11 +20,13 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <Experience />
         <RecentProjects />
         <Clients />
-        <Experience />
+
         <Approach />
         <OurTeam />
+        <ContactForm />
         <Footer />
       </div>
     </main>

@@ -121,7 +121,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "+977 9849819476";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -170,14 +170,14 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-52 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-2xl max-w-[20rem] font-bold z-10`}
+            className={`font-sans sm:text-lg lg:text-2xl sm:max-w-[20rem] font-bold z-10 text-lg max-w-[26rem]`}
           >
             {title}
           </div>
@@ -185,30 +185,36 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              {/* Decorative floating circles */}
+              <div className="absolute top-1/2 left-1/2 w-36 h-36 rounded-full bg-blue-500/20 blur-xl animate-float"></div>
+              <div className="absolute bottom-1/5 right-1/2 w-36 h-36 rounded-full bg-purple-500/20 blur-xl animate-float-delay"></div>
+              <div className="absolute top-1/3 right-1/5 w-36 h-36 rounded-full bg-cyan-500/20 blur-xl animate-float"></div>
+              <div className="absolute bottom-1/5 left-1/3 w-36 h-36 rounded-full bg-indigo-500/20 blur-xl animate-float-delay"></div>
+
+              {/* Decorative grid pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <svg
+                  className="w-full h-full"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <pattern
+                      id="grid"
+                      width="40"
+                      height="40"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <path
+                        d="M 40 0 L 0 0 0 40"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="0.5"
+                      />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
               </div>
             </div>
           )}
@@ -225,7 +231,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Contact is Copied!" : "Copy our contact"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

@@ -2,10 +2,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full" id="contact">
       {/* background grid */}
       {/* <div className='w-full absolute left-0 -bottom-72 min-h-96 pointer-events-none'>
         <img
@@ -15,7 +16,7 @@ const Footer = () => {
         />
       </div> */}
 
-      <div className="flex flex-col items-center">
+      {/* <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take{" "}
           <span className="text-orange-500">your digital presence</span> to the
@@ -32,8 +33,8 @@ const Footer = () => {
             position="right"
           />
         </a>
-      </div>
-      <div className="flex mt-10 md:flex-row justify-between items-center flex-col-reverse gap-8 md:mt-16">
+      </div> */}
+      <div className="flex mt-10 md:flex-row justify-between items-center flex-col-reverse gap-8 md:mt-16  border-t border-gray-800 py-10">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2025 Leaflet Digital
         </p>
@@ -46,12 +47,14 @@ const Footer = () => {
             // >
             //   <img src={info.img} alt='icons' width={20} height={20} />
             // </div>
-            <button
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform hover:-translate-y-1 transition duration-400"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </button>
+            <Link href={info.link} key={info.id} target="_blank">
+              <button
+                key={info.id}
+                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform hover:-translate-y-1 transition duration-400"
+              >
+                <img src={info.img} alt="icons" width={20} height={20} />
+              </button>
+            </Link>
           ))}
         </div>
       </div>

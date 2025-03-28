@@ -52,7 +52,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Leaflet Digital Solution"
+            words="Leaflet Digital Solutions"
             className="text-center text-[40px] md:text-5xl lg:text-7xl"
           />
 
@@ -60,9 +60,9 @@ const Hero = () => {
             Transforming Concepts into Seamless User Experiences
           </p>
 
-          <a href="#about">
+          <a href="#contact">
             <MagicButton
-              title="Show my work"
+              title="Contact Us"
               icon={<FaLocationArrow />}
               position="right"
             />

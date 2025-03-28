@@ -1,8 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Services", link: "#services" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Our Team", link: "#our-team" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -115,24 +115,21 @@ export const testimonials = [
       "Leaflet has helped my company scale by providing me high quality websites in suitable prices.They are quick and have urgency in their work which helps me retain clients and grow my business.",
     name: "Ramy Martens",
     title: "CEO/Founder of Dutchmore WebDesign",
+    img: "/ramy-logo.jpg",
   },
   {
     quote:
       "Abishek as CEO is excellent and always result oriented. The whole process of building our E-com website was handled efficiently and quickly. ",
-    name: "Michael Johnson",
+    name: "Arian Karimi",
     title: "Founder of TNOB (The Nation Of Blaugrana , A Case Selling Website)",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Arian Karimi (Founder)",
-    title: "Director of AlphaStream Technologies",
+    img: "/tnob-logo.jpg",
   },
   {
     quote:
       "Leaflet has been constantly proving itself as client satisfaction and performance oriented from day one. Whole E-com website Dev. The experience was magnificent. ",
     name: "Giriraj Adhikari",
     title: "Founder of DajuVai",
+    img: "/dajuvai-logo.jpg",
   },
 ];
 
@@ -157,7 +154,7 @@ export const companies = [
   },
 ];
 
-export const workExperience = [
+export const workServices = [
   {
     id: 1,
     title: "Website Development",
@@ -191,52 +188,72 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/leafletdigitalsolutions/",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/fb.svg",
+    link: "https://www.facebook.com/profile.php?id=61556336242136",
   },
-  {
-    id: 3,
-    img: "/link.svg",
-  },
+  // {
+  //   id: 3,
+  //   img: "/link.svg",
+  //   link: "https://www.linkedin.com/company/leaflet-digital-solutions/",
+  // },
 ];
 
-export const ourTeam = [
+export const teamMembers = [
   {
-    quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+    name: "Abishek Basnet",
+    role: "CEO/Founder",
+    company: "Leaflet Digital Solutions",
+    testimonial:
+      "Working here has been a game-changer! The collaboration and innovation push me to grow every day",
+    image: "/abishekbasnet.jpg",
+    socials: {
+      linkedin: "#",
+      twitter: "#",
+      github: "#",
+    },
+  },
+  {
+    name: "Sandeep Thapa Magar",
+    role: "COO",
+    company: "Leaflet Digital Solutions",
+    testimonial:
+      "This team thrives on solving challenges. Every project feels like shaping the future of technology!",
+    image: "/sandeep.jpg",
+    socials: {
+      linkedin: "#",
+      twitter: "#",
+      github: "#",
+    },
+  },
+  {
+    name: "Abiral Shrestha",
+    role: "Senior Software Developer",
+    company: "Leaflet Digital Solutions",
+    testimonial:
+      "Creativity knows no bounds here. I love how we transform ideas into impactful designs!",
+    image: "/abiralstha.jpg",
+    socials: {
+      linkedin: "#",
+      twitter: "#",
+      github: "#",
+    },
+  },
+  {
     name: "Rohan Shrestha",
-    designation: "Product Manager at TechFlow",
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-    name: "Michael Rodriguez",
-    designation: "CTO at InnovateSphere",
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    quote:
-      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-    name: "Emily Watson",
-    designation: "Operations Director at CloudScale",
-    src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    quote:
-      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-    name: "James Kim",
-    designation: "Engineering Lead at DataPro",
-    src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-    name: "Lisa Thompson",
-    designation: "VP of Technology at FutureNet",
-    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    role: "Senior Software Developer",
+    company: "Leaflet Digital Solutions",
+    testimonial:
+      "Seamless teamwork, bold strategies, and a shared vision—this is what makes us unstoppable.",
+    image: "/Rohan.jpg",
+    socials: {
+      linkedin: "#",
+      twitter: "#",
+      github: "#",
+    },
   },
 ];
