@@ -35,7 +35,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Successfully delivered 25+ software projects.",
+    title: "Successfully delivered 50+ software projects.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
