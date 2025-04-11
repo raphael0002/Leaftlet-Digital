@@ -93,7 +93,7 @@ export default function ModernTeamSection() {
         {/* Scrollable Team Grid */}
         <div
           ref={scrollRef}
-          className="flex w-full space-x-6 sm:space-x-8 py-10 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+          className="flex w-full sm:space-x-8 py-10 overflow-x-auto scrollbar-hide snap-x snap-mandatory space-x-8 pb-8overflow-y-hidden scrollbar-hide touch-pan-x px-4 md:px-8 pt-10"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {teamMembers.map((member, index) => (
