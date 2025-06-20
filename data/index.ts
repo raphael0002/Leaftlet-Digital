@@ -8,16 +8,26 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
-export const leftLists = ["Branding", "Marketing", "Automation"];
+export const leftLists = [
+  "Branding",
+  "Marketing",
+  "Automation",
+];
 
-export const rightLists = ["Automation", "Marketing", "Branding"];
+export const rightLists = [
+  "Automation",
+  "Marketing",
+  "Branding",
+];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Leaflet Digital Solutions – A trusted global tech partner.",
+    title:
+      "Leaflet Digital Solutions – A trusted global tech partner.",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className:
+      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -25,7 +35,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "24/7 software development support for businesses worldwide.",
+    title:
+      "24/7 software development support for businesses worldwide.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -45,7 +56,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Driving growth with cutting-edge digital solutions.",
+    title:
+      "Driving growth with cutting-edge digital solutions.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -60,7 +72,8 @@ export const gridItems = [
     description: "",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName:
+      "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
@@ -70,7 +83,8 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName:
+      "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
   },
@@ -123,7 +137,8 @@ export const testimonials = [
     quote:
       "Abishek as CEO is excellent and always result oriented. The whole process of building our E-com website was handled efficiently and quickly. ",
     name: "Arian Karimi",
-    title: "Founder of TNOB (The Nation Of Blaugrana , A Case Selling Website)",
+    title:
+      "Founder of TNOB (The Nation Of Blaugrana , A Case Selling Website)",
     img: "/tnob-logo.jpg",
   },
   {
@@ -234,7 +249,7 @@ export const teamMembers = [
   },
   {
     name: "Abiral Shrestha",
-    role: "Senior Software Developer",
+    role: "Senior WordPress Developer",
     company: "Leaflet Digital Solutions",
     testimonial:
       "Creativity knows no bounds here. I love how we transform ideas into impactful designs!",
